@@ -1,325 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Webinar Apsara"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Apsara Webinar</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/main.css">
-    <title>Apsara</title>
-</head>
-
-<body id="Main">
+  <body id="Main">
     <header id="Navbar">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img height="40" src="./assets/img/apsara.png" alt="Apsara">
-                </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#top">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#EventDetail">Event Detail</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#BenefitsSection">Benefits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#Faq">FAQ</a>
-                        </li>
-                    </ul>
-                    <div class="d-grid d-lg-block">
-                        <a class="btn btn-primary ms-lg-3" href="#CTASection">Daftar</a>
-                    </div>
-                </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              height="40"
+              src="./assets/img/codepolitan-logo.png"
+              alt="Codepolitan"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#top">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#EventDetail">Event Detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#BenefitsSection">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Faq">FAQ</a>
+              </li>
+            </ul>
+            <div class="d-grid d-lg-block">
+              <a class="btn btn-primary ms-lg-3" href="#CTASection">Register</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- Hero Section -->
-        <section id="Hero">
-            <div class="container">
-                <div class="row justify-content-between" data-aos="fade-up">
-                    <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
-                        <h1 class="hero-title">Apsara Webinar</h1>
-                        <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a class="btn btn-primary btn-lg rounded-pill" href="#About">Lihat selengkapnya</a>
-                    </div>
-                    <div class="col-md-6 my-5 my-lg-0">
-                        <img class="img-fluid" src="./assets/img/hero-img.png" alt="">
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section id="Hero">
+        <div class="container">
+          <div class="row justify-content-between" data-aos="fade-up">
+            <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
+              <h1 class="hero-title">Apsara Webinar</h1>
+              <p class="lead mb-5">
+                Cloud for Your Digital Cloud.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#CTASection"
+                >Daftar Sekarang</a
+              >
             </div>
-        </section>
-        <!-- End of Hero Section -->
+            <div class="col-md-6 my-5 my-lg-0 d-none d-lg-block">
+              <img class="img-fluid" src="./assets/img/hero-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Hero Section -->
 
-        <!-- Intro Organizator -->
-        <section>
-            <div class="container my-5" data-aos="zoom-in-up" data-aos-duration="3000">
-                <div class="row">
-                    <div class="col text-center">
-                        <h2 class="lead">Organized by</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center my-3">
-                    <div class="col-4 col-md-3 mt-1">
-                        <img class="img-fluid" src="./assets/img/alibaba-cloud.png" alt="">
-                    </div>
-                    <div class="col-4 col-md-3">
-                        <img class="img-fluid" src="./assets/img/codepolitan-logo.png" alt="">
-                    </div>
-                </div>
+      <!-- Intro Organizator -->
+      <section>
+        <div
+          class="container my-5"
+          data-aos="zoom-in-up"
+          data-aos-duration="3000"
+        >
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="lead">Organized by</h2>
             </div>
-        </section>
-        <!-- End of Organizator Section -->
+          </div>
+          <div class="row justify-content-center my-3">
+            <div class="col-4 col-md-3 mt-1">
+              <img
+                class="img-fluid"
+                src="./assets/img/alibaba-cloud.png"
+                alt=""
+              />
+            </div>
+            <div class="col-4 col-md-3">
+              <img
+                class="img-fluid"
+                src="./assets/img/codepolitan-logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Organizator Section -->
 
-        <!-- About Section -->
-        <section id="About">
-            <div class="container" data-aos="fade-up" data-aos-duration="1000">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="./assets/img/question.png" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-start">
-                        <h2 class="section-title mt-5">Apa itu Apsara?</h2>
-                        <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad
-                            praesentium
-                            vel molestiae quasi, saepe velit fugit at et eum tempora eveniet nemo deleniti quisquam
-                            minima, suscipit qui aliquam expedita.</p>
-                    </div>
-                </div>
+      <!-- About Section -->
+      <section id="About">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="./assets/img/question.png" alt="" />
             </div>
-        </section>
-        <!-- End of About -->
+            <div class="col-md-6 text-center text-md-start">
+              <h2 class="section-title mt-5">Apa itu Apsara?</h2>
+              <p class="lead mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                ad praesentium vel molestiae quasi, saepe velit fugit at et eum
+                tempora eveniet nemo deleniti quisquam minima, suscipit qui
+                aliquam expedita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About -->
 
-        <!-- Teaser Section -->
-        <section id="VideoSection">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="ratio ratio-16x9">
-                            <iframe class="rounded" width="560" height="315"
-                                src="https://www.youtube.com/embed/byu_Z0eM8dA" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+      <!-- Teaser Section -->
+      <section id="VideoSection">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  class="rounded"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/byu_Z0eM8dA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-        </section>
-        <!-- End of Teaser Section -->
+          </div>
+        </div>
+      </section>
+      <!-- End of Teaser Section -->
 
-        <!-- Event Detail -->
-        <section id="EventDetail">
-            <div class="container my-5">
-                <div class="row mb-5 text-center">
-                    <div class="col">
-                        <h2 class="section-title">Detail Acara</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-4 mb-3">
-                        <div class="card rounded border-0 shadow">
-                            <div class="card-body py-5">
-                                <img class="img-circle" src="http://placekitten.com/200/300" alt="">
-                                <h5 class="section-title mt-4">Speaker 1</h5>
-                                <p><small>Alibaba Cloud Indonesia</small></p>
-                                <p>Speaker</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card rounded border-0 shadow">
-                            <div class="card-body py-5">
-                                <img class="img-circle" src="http://placekitten.com/200/300" alt="">
-                                <h5 class="section-title mt-4">Speaker 2</h5>
-                                <p><small>Codepolitan</small></p>
-                                <p>Moderator</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col text-center">
-                        <h5>Tanggal</h5>
-                        <p>19 Oktober 2021</p>
-                        <h5>Waktu</h5>
-                        <p>19.00 - 20.30 WIB</p>
-                    </div>
-                </div>
+      <!-- Event Detail -->
+      <section id="EventDetail">
+        <div class="container my-5">
+          <div class="row mb-5 text-center">
+            <div class="col">
+              <h2 class="section-title">Detail Acara</h2>
             </div>
-        </section>
-        <!-- Event Detail -->
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card rounded border-0 shadow">
+                <div class="card-body py-5">
+                  <img
+                    class="img-circle"
+                    src="http://placekitten.com/200/300"
+                    alt=""
+                  />
+                  <h5 class="section-title mt-4">Speaker 1</h5>
+                  <p><small>Alibaba Cloud Indonesia</small></p>
+                  <p>Speaker</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card rounded border-0 shadow">
+                <div class="card-body py-5">
+                  <img
+                    class="img-circle"
+                    src="http://placekitten.com/200/300"
+                    alt=""
+                  />
+                  <h5 class="section-title mt-4">Speaker 2</h5>
+                  <p><small>Codepolitan</small></p>
+                  <p>Moderator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col text-center">
+              <h5>Tanggal</h5>
+              <p>19 Oktober 2021</p>
+              <h5>Waktu</h5>
+              <p>19.00 - 20.30 WIB</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Event Detail -->
 
-        <!-- Benefits -->
-        <section id="BenefitsSection">
-            <div class="container mt-5 pt-5">
-                <div class="row">
-                    <div class="col-md-6 mb-5 d-block d-md-none">
-                        <img class="img-fluid" src="./assets/img/benefits.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="section-title text-center text-md-start">Benefits</h3>
-                        <p>Benefits yang akan didapat jika mengikuti event ini adalah 100 voucher beasiswa AI Forward
-                            yang isinya:</p>
-                        <ul>
-                            <li>Kelas Python</li>
-                            <li>Kelas Machine Learning</li>
-                            <li>Sertifikat</li>
-                            <li>Masih banyak lagi</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 d-none d-md-block">
-                        <img class="img-fluid" src="./assets/img/benefits.png" alt="">
-                    </div>
-                </div>
+      <!-- Benefits -->
+      <section id="BenefitsSection">
+        <div class="container mt-5 pt-5">
+          <div class="row">
+            <div class="col-md-6 mb-5 d-block d-md-none">
+              <img class="img-fluid" src="./assets/img/benefits.png" alt="" />
             </div>
-        </section>
-        <!-- End of Benefits -->
+            <div class="col-md-6">
+              <h3 class="section-title text-center text-md-start">Benefits</h3>
+              <p>
+                Benefits yang akan didapat jika mengikuti event ini adalah 100
+                voucher beasiswa AI Forward yang isinya:
+              </p>
+              <ul>
+                <li>Kelas Python</li>
+                <li>Kelas Machine Learning</li>
+                <li>Sertifikat</li>
+                <li>Masih banyak lagi</li>
+              </ul>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+              <img class="img-fluid" src="./assets/img/benefits.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Benefits -->
 
-        <!-- FAQ Section -->
-        <section id="Faq">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="./assets/img/faq.png" alt="">
-                    </div>
-                    <div class="col-md-6 pt-5">
-                        <h2 class="section-title text-center text-md-start">FAQ</h2>
-                        <p class="lead text-center text-md-start">Frequently Asked Question</p>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
-                                        Accordion Item #1
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                        first item's accordion body.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                        aria-controls="flush-collapseTwo">
-                                        Accordion Item #2
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                        second item's accordion body. Let's imagine this being filled with some actual
-                                        content.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
-                                        Accordion Item #3
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                        third item's accordion body. Nothing more exciting happening here in terms of
-                                        content, but just filling up the space to make it look, at least at first
-                                        glance, a bit more representative of how this would look in a real-world
-                                        application.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- FAQ Section -->
+      <section id="Faq">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <img class="img-fluid" src="./assets/img/faq.png" alt="" />
             </div>
-        </section>
-        <!-- End of Teaser Section -->
+            <div class="col-md-6 pt-5">
+              <h2 class="section-title text-center text-md-start">FAQ</h2>
+              <p class="lead text-center text-md-start">
+                Frequently Asked Question
+              </p>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Teaser Section -->
 
-        <!-- CTA Section -->
-        <section id="CTASection">
-            <div class="container my-5">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-8 text-center">
-                        <h5>Event akan berlangsung dalam:</h5>
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="text-center py-3" id="countdown"></h3>
-                            </div>
-                        </div>
-                    </div>
+      <!-- CTA Section -->
+      <section id="CTASection">
+        <div class="container my-5">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+              <h5>Event akan berlangsung dalam:</h5>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="text-center py-3" id="countdown"></h3>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <a class="btn btn-lg btn-warning text-white rounded px-4 py-3" href="">Daftar Sekarang</a>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- End of CTA -->
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <a
+                class="btn btn-lg btn-primary text-white rounded px-4 py-3"
+                target="_blank"
+                href="https://app.livewebinar.com/349-821-246"
+                >Daftar Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of CTA -->
     </main>
     <footer id="FooterSection">
-        <div class="container mt-5 text-center text-md-start">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <img height="30" src="./assets/img/apsara.png" alt="">
-                    <p class="lead mt-3">Lorem ipsum dolor sit amet adipisicing elit</p>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="section-title mb-4">Contact Us</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-list">
-                            <a class="link" href="">email@email.com</a>
-                        </li>
-                        <li class="nav-list">
-                            <a class="link" href="">0857xxxxxxxx</a>
-                        </li>
-                    </ul>
-                </div>
+        <hr />
+        <div class="container px-5 mt-5">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+              <h6><strong>JOIN US</strong></h6>
+              <nav class="nav flex-column my-3">
+                <a class="link" href="https://www.codepolitan.com/cara-belajar">Cara Belajar</a>
+                <a class="link" href="https://www.codepolitan.com/tnc">Terms & Conditions</a>
+                <a class="link" href="https://www.codepolitan.com/faq">Frequently Asked Questions</a>
+                <a class="link" href="https://www.codepolitan.com/privacy-policy">Privacy Policy</a>
+              </nav>
             </div>
-            <div class="row mt-5">
-                <div class="col">
-                    <p class="text-center">&copy; 2021 Codepolitan.com - All rights reserved.</p>
-                </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <h6><strong>PROGRAM</strong></h6>
+              <nav class="nav flex-column my-3">
+                <a class="link" href="https://devschool.id/">Developer School</a>
+                <a class="link" href="https://kampuscoding.id/">Kampus Coding</a>
+                <a class="link" href="https://geekmentor.id/">Online Mentoring</a>
+              </nav>
             </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <h6><strong>DEVELOPERS</strong></h6>
+              <nav class="nav flex-column my-3">
+                <a class="link" href="https://www.codepolitan.com/forum">Forum Discussions</a>
+                <a class="link" href="https://www.codepolitan.com/credit-to-bug-reporter">Hall of Fame</a>
+                <a class="link" href="https://www.codepolitan.com/leaderboard">Leaderboard</a>
+              </nav>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <h6><strong>COMPANY</strong></h6>
+              <nav class="nav flex-column my-3">
+                <a class="link" href="https://www.codepolitan.com/about">About Codepolitan</a>
+                <a class="link" href="https://www.codepolitan.com/articles">Blog</a>
+              </nav>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-    <script src="./js/observer.js"></script>
-    <script src="./js/countdown.js">
-    </script>
+        <hr />
+        <div class="container px-5">
+          <div class="row">
+            <div class="col">
+                <p><small>&copy; 2018 CodePolitan. All rights reserved</small></p>
+            </div>
+            <div class="col text-end">
+                <a class="footer-socmed-link" href="https://www.facebook.com/codepolitan/">
+                    <i class="fab fa-facebook text-dark"></i>
+                </a>
+                <a class="footer-socmed-link" href="https://www.instagram.com/codepolitan/">
+                  <i class="fab fa-instagram text-dark"></i>
+              </a>
+              <a class="footer-socmed-link" href="https://twitter.com/codepolitan">
+                  <i class="fab fa-twitter text-dark"></i>
+              </a>
+              <a class="footer-socmed-link" href="https://www.linkedin.com/company/codepolitan">
+                  <i class="fab fa-linkedin text-dark"></i>
+              </a>
+              <a class="footer-socmed-link" href="https://www.youtube.com/c/codepolitan">
+                  <i class="fab fa-youtube text-dark"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/countdown.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>

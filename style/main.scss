@@ -1,90 +1,99 @@
 * {
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Be Vietnam Pro', sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 [id] {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 #Main {
-    // Global style
-    .btn-primary {
-        color: white;
-        background-color: orange;
-        border: none;
-    }
-    .btn-primary:hover {
-        color: white;
-        background-color: orangered;
-    }
-    .section-title {
-        color: orangered;
-        font-weight: bold;
-    }
-    .img-circle {
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
+  // Global style
+  .btn-primary {
+    color: white;
+    background-color: #5bc0be;
+    border: none;
+  }
+  .btn-primary:hover {
+    color: white;
+    background-color: #49a1a0;
+  }
+  .section-title {
+    color: black;
+    font-weight: bold;
+  }
+  .img-circle {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 
 #Navbar {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #Hero {
-    min-height: 100vh;
-    padding-top: 100px;
-    background-image: url('../assets/img/hero-bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .hero-title {
-        font-weight: bold;
-        color: orangered;
-    }
+  min-height: 100vh;
+  padding-top: 100px;
+  background-image: url("../assets/img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
 
 #About {
-    margin-top: 150px;
-    margin-bottom: 150px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 #VideoSection {
-    background-color: orange;
+  background-color: rgb(245, 248, 252);
 }
 
 #CTASection {
-    background-color: orange;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .card {
-        background-color: rgb(255, 218, 149);
-        border: none;
-        border-radius: 25px;
-    }
+  background-color: rgb(245, 248, 252);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .card {
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 25px;
+  }
 }
 
 #FooterSection {
-    .link {
-        text-decoration: none;
-        color: black;
-    }
-    .link:hover {
-        color: orange;
-    }
+  .link {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .link:hover {
+    color: black;
+  }
+  .footer-socmed-link {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
 }
 
-@media screen and (max-width: 700px){
-    nav {
-        background: white;
-    }
+@media screen and (max-width: 700px) {
+  nav {
+    background: white;
+  }
 
-    #Hero {
-        background-image: none;
-        background-color: rgb(255, 211, 130);
+  #Hero {
+    .hero-title {
+      font-size: 30px;
     }
+  }
 }
